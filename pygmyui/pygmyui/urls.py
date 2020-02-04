@@ -20,9 +20,9 @@ import pygmyui.generic_views as views
 
 urlpatterns = [
     url(r'^favicon.ico', views.dummy),
-    url(r'^about', views.about),
-    url(r'^contact', views.contact),
-    url(r'', include('user_auth.urls')),
+    # url(r'^about', views.about),
+    # url(r'^contact', views.contact),
+    # url(r'', include('user_auth.urls')),
     url(r'', include('pygmy.urls')),
 ]
 
