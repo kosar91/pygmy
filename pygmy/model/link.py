@@ -26,7 +26,7 @@ class Link(Model):
     protocol = Column(String(10), default='http://')
     domain = Column(String(300), )
     long_url_hash = Column(BigInteger, index=True)
-    short_code = Column(Unicode(6), unique=True, index=True, default=None)
+    short_code = Column(Unicode(10), unique=True, index=True, default=None)
     description = Column(String(1000), default=None)
     owner = Column(Integer, default=None)
     clickmeta = relationship(
